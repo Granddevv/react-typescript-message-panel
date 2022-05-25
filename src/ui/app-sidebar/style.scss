@@ -1,0 +1,10 @@
+@import "../../assets/styles/color.scss";
+
+.app_sidebar {
+  padding: 30px 10px;
+  background-color: $bg_gray_color;
+  height: 100vh;
+  overflow-y: auto;
+  flex: 1;
+  max-width: 350px;
+}
