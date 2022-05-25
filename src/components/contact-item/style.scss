@@ -1,0 +1,64 @@
+@import "../../assets/styles/color.scss";
+
+.contact_item {
+  color: $tx_white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+
+      &-notify {
+        width: 20px;
+        height: 20px;
+        background-color: #db2725;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        color: #fff;
+      }
+    }
+
+    &-date {
+      font-size: 12px;
+    }
+  }
+
+  &-content {
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.selected {
+  background: #fff;
+
+  .contact_item {
+    &-header {
+      &-title {
+        color: $bg_gray_color;
+      }
+
+      &-date {
+        color: $bg_gray_color;
+      }
+    }
+
+    &-content {
+      color: $bg_gray_color;
+    }
+  }
+}
